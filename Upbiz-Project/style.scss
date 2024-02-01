@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: var(--orange-light);
+    color: #000;
+}
+
+button {
+    cursor: pointer;
+}
+
+svg {
+    width: 100%;
+}
+
+img {
+    width: 5%;
+}
+
+i {
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    margin-left: 8px;
+    margin-right: 8px
+}
+
+// Imports 
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+@import "./partials/header";
+@import "./partials/main";
+
+:root {
+    --white-normal: #ffff;
+    --white-light: #f2f2f2;
+    --blue-normal: #3e5481;
+    --blue-light: #8094ad;
+    --orange-normal: #f5b324;
+    --orange-light: #f7cb6c;
+    --black-normal: #000;
+}
+
+

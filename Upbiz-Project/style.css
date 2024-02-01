@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: var(--orange-light);
+  color: #000;
+}
+
+button {
+  cursor: pointer;
+}
+
+svg {
+  width: 100%;
+}
+
+img {
+  width: 5%;
+}
+
+i {
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.bg-header {
+  width: 100%;
+  height: 50vh;
+  background-image: url(./assets/retirement.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.site-header {
+  background-color: var(--orange-normal);
+  width: 100%;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+@media screen and (max-width: 1180px) {
+  .site-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .site-header .site-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .site-header ul {
+    display: none;
+  }
+}
+.social-header {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  font-size: 0.9rem;
+}
+.social-header i {
+  color: var(--black-normal);
+}
+.social-header i:hover {
+  color: var(--white-normal);
+}
+
+#home {
+  color: var(--black-normal);
+  font-weight: 900;
+}
+
+.site-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+.site-nav ul {
+  border-right: 1px solid var(--white-normal);
+  text-transform: uppercase;
+}
+.site-nav ul a {
+  color: var(--white-normal);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.site-nav ul a:hover {
+  color: var(--black-normal);
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.email a {
+  color: var(--black-normal);
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+.email a:hover {
+  color: var(--white-normal);
+}
+.email i {
+  color: var(--black-normal);
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.whatsapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.whatsapp a {
+  color: var(--black-normal);
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+.whatsapp a:hover {
+  color: var(--white-normal);
+}
+.whatsapp i {
+  color: var(--black-normal);
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+.whatsapp i:hover {
+  color: var(--white-normal);
+}
+
+.title-sections {
+  padding: 3% 1%;
+  color: var(-black-normal);
+  text-align: center;
+}
+.title-sections h3 {
+  font-size: 2.8rem;
+  font-weight: 200;
+  line-height: 2;
+}
+.title-sections p {
+  font-size: 1.2em;
+  font-weight: 200;
+}
+
+.line {
+  width: 5%;
+  margin: 0 auto;
+  margin-top: 32px;
+  border-top: 0.1rem solid var(--white-light);
+}
+
+.bg-section {
+  width: 100%;
+  height: 80vh;
+  background-image: url(./assets/olderman.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.08);
+  opacity: 0.8;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.about {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 8%;
+}
+.about h3 {
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--black-normal);
+}
+.about p {
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--black-normal);
+}
+
+.bg-services {
+  width: 100%;
+  height: 50vh;
+  background-image: url(./assets/jurylaw2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.08);
+  opacity: 0.9;
+}
+
+.services {
+  background-color: var(--white-light);
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.content-services {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 32px;
+  padding: 1.5rem;
+}
+.content-services .jobs {
+  margin: 16px;
+  border-radius: 3%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 32px;
+}
+.content-services .jobs img {
+  width: 30%;
+  border-radius: 50%;
+}
+.content-services .jobs span {
+  color: var(--black-normal);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.content-services .jobs p {
+  text-align: center;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 1180px) {
+  .content-services {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.bg-review {
+  width: 100%;
+  height: 50vh;
+  background-image: url(./assets/woman-smile.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.08);
+  opacity: 0.9;
+}
+
+.review {
+  background-color: #f2f2f2;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.review .review-content {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.review .details {
+  background-color: white;
+  padding: 3% 5%;
+}
+.review .details h4 {
+  color: #000;
+  margin-bottom: 6px;
+}
+.review .details span {
+  color: #848484;
+  font-weight: 900;
+}
+.review .details p {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.8;
+  margin-top: 18px;
+}
+
+.faq {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.bg-faq {
+  width: 100%;
+  height: 50vh;
+  background-image: url(./assets/faq-image.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.08);
+  opacity: 0.9;
+}
+
+.faq-content {
+  padding: 5%;
+}
+.faq-content span {
+  color: #000;
+  font-weight: 500;
+  font-size: 3rem;
+}
+.faq-content .report {
+  padding: 5% 1%;
+}
+.faq-content .report li {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2;
+}
+.faq-content .report p {
+  color: #848484;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.bg-contact {
+  width: 100%;
+  height: 35vh;
+  background-image: url(./assets/bg-contact.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.08);
+  opacity: 0.9;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3%;
+  gap: 64px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  gap: 8px;
+  background-color: #f2f2f2;
+  border-radius: 5%;
+}
+.items a {
+  color: #848484;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.items a:hover {
+  color: #f5b324;
+}
+.items ion-icon {
+  font-size: 3rem;
+  color: #f5b324;
+}
+.items span {
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1180px) {
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.site-footer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 0;
+  gap: 16px;
+}
+.site-footer .footer-logo {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+}
+.site-footer img {
+  height: auto;
+  width: 45%;
+  border-radius: 50%;
+}
+.site-footer p {
+  color: #000;
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+
+.social-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  font-size: 1rem;
+}
+.social-footer p {
+  font-size: 0.1rem;
+  font-weight: small;
+}
+.social-footer i {
+  color: #000;
+}
+.social-footer i:hover {
+  color: #f5b324;
+}
+
+:root {
+  --white-normal: #ffff;
+  --white-light: #f2f2f2;
+  --blue-normal: #3e5481;
+  --blue-light: #8094ad;
+  --orange-normal: #f5b324;
+  --orange-light: #f7cb6c;
+  --black-normal: #000;
+}/*# sourceMappingURL=style.css.map */
